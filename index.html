@@ -5,15 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" />
-    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
 <body>
+    <div class="header">
+        Fight for the title... of the strongest!
+    </div>
+    <audio src="./images/battleTheme.mp3" autoplay="autoplay" loop="loop"></audio>
+
+
+    <div class="versusContainer">
+        <div class="progressBar">
+            <div class="fill">
+
+            </div>
+        </div>
+
+        <div class="progressBar2">
+            <div class="fill">
+
+            </div>
+        </div>
+
+        <img src ="./images/healthBar.svg" class = "healthBorder">
+        <img src ="./images/healthBarFlipped.svg" class = "healthBorderFlipped">
+
+        <div class="you">
+            <img src ="./images/you2.png" class = "img">
+            
+        </div>
+        <div class="opponent">
+            <img src ="./images/opponent.png" class = "img">
+            
+        </div>
+
+    </div>
+
+    <div class = "rpsContainer">
+
+        <img src = "./images/border.svg" class ="pokemonBorder"/>
+        <button class = "button1 moves" id="btn" value = "rock">Rock</button>
+        <button class = "button2 moves" id="btn" value = "paper">Paper</button>
+        <button class = "button3 moves" id="btn" value = "scissors">Scissors</button>
+        <button class = "button4 moves" >--</button>
+        <div class="introText" id = "intro">
+            
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="app.js"></script>
     <script>
 
-        let player = prompt();
-        console.log(playRound(computerPlay(),player));
+        let playerScore = 0;
+        let computerScore = 0;
+
+            // let player = prompt();
+            // let result = playRound(computerPlay(),player);
+            // if(result == 'tie'){
+            //     console.log('it\'s a tie');
+            // }
+            // else{
+            //     (result)?playerScore++:computerScore++;
+            // }
+
+        // let player = prompt();
+        // console.log(playRound(computerPlay(),player));
     </script>
+
 </body>
 </html>

@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'pokemon';
+  src: url('./images/pokemon.ttf') format('truetype');
+}
+
+/* Body */
+
+.header{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin:2rem;
+}
+
+.versusContainer{
+    margin:auto;
+    position: relative;
+    display:flex;
+    justify-content: space-evenly;
+    width: 40rem;
+    height:23rem;
+
+}
+
+/* HP Bar */
+
+.progressBar{
+  position:absolute;
+  top:0;
+  left:0;
+  margin-left: 7rem;
+  margin-top: .8rem;
+  width:13rem;
+  height: .8rem;
+  background-color: black;
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+.progressBar .fill{
+  width: 0%;
+  height: 50%;
+  background-color: gray;
+  border-radius: 3px;
+  margin: 3px;
+  margin-left:4px;
+  margin-right: 4px;
+  transition: all 2s;
+}
+
+.progressBar2{
+  position:absolute;
+  bottom:0;
+  right:0;
+  margin-right: 3.5rem;
+  margin-bottom: 4rem;
+  width:13rem;
+  height: .8rem;
+  background-color: black;
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+.progressBar2 .fill{
+  width: 0%;
+  height: 50%;
+  background-color: gray;
+  border-radius: 3px;
+  margin: 3px;
+  margin-left:4px;
+  margin-right: 4px;
+  transition: all 2s;
+}
+
+/* Bottom Container */
+
+.rpsContainer{
+    margin:auto;
+    position:relative;
+    width:40rem;
+    height:10rem;
+}
+
+
+.rpsContainer .button1{
+  position:absolute;
+  top:0;
+  left:0;
+  margin-left: 15rem;
+  margin-top: 0rem;
+  display:none;
+}
+.rpsContainer .button2{
+  position:absolute;
+  top:0;
+  left:0;
+  margin-left: 15rem;
+  margin-top: 1.8rem;
+  display:none;
+}
+.rpsContainer .button3{
+  position:absolute;
+  top:0;
+  left:0;
+  margin-left: 15rem;
+  margin-top: 3.6rem;
+  display:none;
+}
+
+.rpsContainer .button4{
+  position:absolute;
+  top:0;
+  left:0;
+  margin-left: 15rem;
+  margin-top: 5.4rem;
+  display:none;
+}
+
+.moves{
+  font-family:'pokemon';
+  font-size: 1.6rem;
+  border: none;
+  background:none;
+}
+
+.pokemonBorder{
+    position:absolute;
+    height: 12rem;
+    width:40rem;
+    margin-top:-1.7rem;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.you .img{
+    position: absolute;
+    width:20rem;
+    bottom:.5rem;
+    left: 0;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+
+.opponent .img{
+    position:absolute;
+    width:10rem;
+    animation: 3s ease-out 0s 1 slideInFromRight;
+}
+
+/* Health Bars */
+
+.healthBorder{
+    position:absolute;
+    bottom:0;
+    width:20rem;
+    margin-bottom: .5rem;
+    margin-right: -15rem;
+    z-index: 1;
+}
+
+.healthBorderFlipped{
+    position: absolute;
+    top:0;
+    left:2rem;
+    width:20rem;
+    z-index: 1;
+}
+
+/* Introtext */
+
+.introText{
+  font-family: pokemon;
+  font-size: 1.7rem;
+  padding:2rem;
+  padding-top:1rem;
+  padding-left:2.5rem;
+}
