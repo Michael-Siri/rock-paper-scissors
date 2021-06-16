@@ -9,7 +9,9 @@
     font-family: 'Caveat Brush', cursive;
     font-size: 2rem;
     text-align: center;
-    margin:2rem;
+    margin:4rem;
+    margin-top:2rem;
+    margin-bottom:6rem;
 }
 
 .versusContainer{
@@ -21,6 +23,32 @@
     height:23rem;
 
 }
+
+
+/* Names */
+
+.name1{
+  position: absolute;
+  font-family: pokemon;
+  font-size: 1.7rem;
+
+  bottom: 0;
+  right: 0;
+  margin-bottom:7rem;
+  margin-right:4rem;
+}
+
+.name2{
+  position: absolute;
+  font-family: pokemon;
+  font-size: 1.7rem;
+
+  top:0;
+  left:0;
+  margin-top: -4.5rem;
+  margin-left: 1.5rem;
+}
+
 
 /* HP Bar */
 
@@ -87,7 +115,8 @@
   top:0;
   left:0;
   margin-left: 15rem;
-  margin-top: 0rem;
+  margin-top: .1rem;
+  height:2.3rem;
   display:none;
 }
 .rpsContainer .button2{
@@ -95,7 +124,8 @@
   top:0;
   left:0;
   margin-left: 15rem;
-  margin-top: 1.8rem;
+  margin-top: 2rem;
+  height:2.1rem;
   display:none;
 }
 .rpsContainer .button3{
@@ -103,7 +133,8 @@
   top:0;
   left:0;
   margin-left: 15rem;
-  margin-top: 3.6rem;
+  margin-top: 3.9rem;
+  height:2.1rem;
   display:none;
 }
 
@@ -112,8 +143,10 @@
   top:0;
   left:0;
   margin-left: 15rem;
-  margin-top: 5.4rem;
+  margin-top: 5.6rem;
+  height:1rem;
   display:none;
+  z-index: -1;
 }
 
 .moves{
@@ -151,16 +184,18 @@
 
 .you .img{
     position: absolute;
-    width:20rem;
-    bottom:.5rem;
-    left: 0;
+    width:14rem;
+    bottom:0rem;
+    left: 1rem;
     animation: 3s ease-out 0s 1 slideInFromLeft;
 }
 
 
 .opponent .img{
     position:absolute;
-    width:10rem;
+    top:0;
+    margin-top: -6rem;
+    width:12rem;
     animation: 3s ease-out 0s 1 slideInFromRight;
 }
 

@@ -45,23 +45,48 @@ btn.forEach((btn) =>{
         
         let result = playRound(computerPlay(), btn.value);
         if(result == 'tie'){
-            console.log('it\'s a tie');
+            playClickSound()
+
+            setTimeout(toggleButtons, 0);
+            toggleBattleText();
+            battleText("It was a tie...!");
+            setTimeout(toggleButtons, 2000);
+            setTimeout(toggleBattleText, 1700);
+            // console.log('it\'s a tie');
         }
         else{
-            // (result)?playerScore++:computerScore++;
             if(result === true){
+                playClickSound()
+
                 playerScore++;
                 updateEnemyHealth(bar,96-(19.2*playerScore));
+
+        
+                setTimeout(toggleButtons, 0);
+                toggleBattleText();
+                battleText("Opponent was hit!");
+                setTimeout(toggleButtons, 2000);
+                setTimeout(toggleBattleText, 1700);
+
             }
             else{
+                playClickSound()
+
                 computerScore++;
                 updateEnemyHealth(bar2,96-(19.2*computerScore));
+
+                setTimeout(toggleButtons, 0);
+                toggleBattleText();
+                battleText("You were hit!");
+                setTimeout(toggleButtons, 2000);
+                setTimeout(toggleBattleText, 1700);
             }
         }
 
         if(playerScore>=5){
             console.log(`You win ${playerScore} to ${computerScore}`);
             resetScore();
+            
         }
         else if (computerScore>=5){
             console.log(`You lose ${playerScore} to ${computerScore}`);
@@ -78,37 +103,56 @@ var showText = function (target, message, index, interval) {
     }
   }
 
+
+
 function battleIntro(){
     $(function () {
         showText("#intro", "Bandit has challenged you to a battle . . . ! ", 0, 50);   
       });
 }
 
+
+function battleText(text){
+    $( "#intro" ).empty();
+    $(function () {
+        showText("#intro", text, 0, 50);   
+      });
+}
+
+function toggleBattleText()
+{
+    $("#intro").toggle();
+}
+
+function playClickSound(){
+    var audio = document.getElementById("clickSound");
+    audio.loop =false;
+    audio.play();
+};
+
+
 function updateEnemyHealth(healthBar,value){
 healthBar.querySelector(".fill").style.width = `${value}%`;
 }
 
-function showButtons(button1, button2, button3)
+function toggleButtons(button1, button2, button3)
 {
     $(".button1, .button2, .button3, .button4").toggle();
 }
 
 const bar = document.querySelector(".progressBar");
 const bar2 = document.querySelector(".progressBar2");
-const button1 = document.querySelector(".button1");
-const button2 = document.querySelector(".button2");
-const button3 = document.querySelector(".button3");
-const button4 = document.querySelector(".button4");
+
+// Intro Animations
 
 updateEnemyHealth(bar,96);
 updateEnemyHealth(bar2,96);
 
 setTimeout(battleIntro, 3000);
 
-setTimeout(function(){
-    $('#intro').hide()}, 7000);
+setTimeout(toggleBattleText, 6750);
 
-setTimeout(showButtons, 7001);
+setTimeout(toggleButtons, 7000);
 
-
+// End animations
 
