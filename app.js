@@ -152,6 +152,7 @@ btn2.addEventListener('click', () => {
 
 btn3.addEventListener('click', () => {
 
+    playClickSound();
     setTimeout(toggleButtons, 0);
     toggleBattleText();
 
@@ -245,6 +246,15 @@ function endGameLoss2(){
 
 const bar = document.querySelector(".progressBar");
 const bar2 = document.querySelector(".progressBar2");
+
+//setting volume for bgm
+
+var b = document.getElementById("battleTheme");
+b.volume = 0.5;
+
+var v = document.getElementById("victoryTheme");
+v.volume = 0.8;
+
 
 // Intro Animations
 
