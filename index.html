@@ -18,7 +18,15 @@
     <audio id = "battleTheme" src="./images/battleTheme.mp3" autoplay="autoplay" loop="loop" volume = "1"></audio>
     <audio id ="clickSound" src ="./images/clickSound2.mp3" loop ="false"></audio>
     <audio id = "victoryTheme" src="./images/victoryTheme.mp3" volume = ".5"></audio>
+    <script>
+        //setting volume for bgm
 
+            var b = document.getElementById("battleTheme");
+            b.volume = 0.5;
+
+            var v = document.getElementById("victoryTheme");
+            v.volume = 0.8;
+    </script>
     <div class="versusContainer">
         <div class="progressBar">
             <div class="fill">
