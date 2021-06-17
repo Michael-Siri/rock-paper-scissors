@@ -15,8 +15,9 @@
     <div class="header">
         Fight for the title... of the strongest!
     </div>
-    <audio src="./images/battleTheme.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio id = "battleTheme" src="./images/battleTheme.mp3" autoplay="autoplay" loop="loop" volume = ".5"></audio>
     <audio id ="clickSound" src ="./images/clickSound2.mp3" loop ="false"></audio>
+    <audio id = "victoryTheme" src="./images/victoryTheme.mp3" volume = ".8"></audio>
 
     <div class="versusContainer">
         <div class="progressBar">
@@ -29,6 +30,22 @@
             <div class="fill">
 
             </div>
+        </div>
+
+        <div class="HP1">
+            HP:
+        </div>
+
+        <div class="HP2">
+            HP:
+        </div>
+
+        <div class="level1">
+            :LV9
+        </div>
+
+        <div class="level2">
+            :LV7
         </div>
 
         <img src ="./images/healthBar.svg" class = "healthBorder">
@@ -49,6 +66,14 @@
             BROCK
         </div>
 
+
+        <button class = "invisible1" id = "opponent"></button>
+        <button class = "invisible2" id = "you"></button>
+        <img src ="./images/pointer.svg" class = "pointer4">
+        <img src ="./images/pointer.svg" class = "pointer5">
+        <img src ="./images/pointer2.svg" class = "pointer6">
+        <img src ="./images/pointer2.svg" class = "pointer7">
+
     </div>
 
     <div class = "rpsContainer">
@@ -58,6 +83,10 @@
         <button class = "button2 moves" id="btn" value = "paper">Paper</button>
         <button class = "button3 moves" id="btn" value = "scissors">Scissors</button>
         <button class = "button4 moves" >--</button>
+        <img src ="./images/pointer.svg" class = "pointer1">
+        <img src ="./images/pointer.svg" class = "pointer2">
+        <img src ="./images/pointer.svg" class = "pointer3">
+
         <div class="introText" id = "intro">
             
         </div>
@@ -67,7 +96,7 @@
     <script src="app.js"></script>
     <script>
 
-        let playerScore = 0;
+        let playerScore = 1;
         let computerScore = 0;
 
             // let player = prompt();

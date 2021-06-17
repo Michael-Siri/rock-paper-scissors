@@ -45,8 +45,8 @@
 
   top:0;
   left:0;
-  margin-top: -4.5rem;
-  margin-left: 1.5rem;
+  margin-top: -5rem;
+  margin-left: 3rem;
 }
 
 
@@ -112,6 +112,7 @@
 
 .rpsContainer .button1{
   position:absolute;
+  cursor: pointer;
   top:0;
   left:0;
   margin-left: 15rem;
@@ -121,6 +122,7 @@
 }
 .rpsContainer .button2{
   position:absolute;
+  cursor: pointer;
   top:0;
   left:0;
   margin-left: 15rem;
@@ -130,6 +132,7 @@
 }
 .rpsContainer .button3{
   position:absolute;
+  cursor: pointer;
   top:0;
   left:0;
   margin-left: 15rem;
@@ -218,6 +221,45 @@
     z-index: 1;
 }
 
+.HP1{
+  position:absolute;
+
+  font-family: pokemon;
+  font-size: 1.2rem;
+
+  left: 3.2rem;
+}
+
+.HP2{
+  position:absolute;
+  font-family: pokemon;
+  font-size: 1.2rem;
+
+  right:17rem;
+  bottom:3.58rem;
+}
+
+.level1{
+  position:absolute;
+  
+  font-family: pokemon;
+  font-size: 1.2rem;
+
+  left: 7rem;
+  top: -2.2rem;
+
+}
+
+.level2{
+  position:absolute;
+  
+  font-family: pokemon;
+  font-size: 1.2rem;
+
+  right: 8rem;
+  bottom: 5.2rem;
+}
+
 /* Introtext */
 
 .introText{
@@ -227,3 +269,133 @@
   padding-top:1rem;
   padding-left:2.5rem;
 }
+
+/* pointer animations for options and characters*/
+
+.pointer1{
+  position: absolute;
+
+  top:0;
+  left:0;
+  margin-left: 13.8rem;
+  margin-top: .6rem;
+  height:2.3rem;
+  width: 18px;
+  display:none;
+}
+
+.pointer2{
+  position: absolute;
+
+  top:0;
+  left:0;
+  margin-left: 13.8rem;
+  margin-top: 2.5rem;
+  height:2.1rem;
+  width: 18px;
+  display:none;
+}
+
+.pointer3{
+  position: absolute;
+
+  top:0;
+  left:0;
+  margin-left: 13.8rem;
+  margin-top: 4.4rem;
+  height:2.1rem;
+  width: 18px;
+  display:none;
+}
+
+.pointer4{
+  position: absolute;
+  width: 25px;
+  right: 12rem;
+  display:none;
+
+}
+
+.pointer5{
+  position: absolute;
+  width: 25px;
+  left: 1rem;
+  bottom:4rem;
+  display:none;
+
+}
+
+.pointer6{
+  position: absolute;
+  width: 25px;
+  right: 1.5rem;
+  display:none;
+
+}
+
+.pointer7{
+  position: absolute;
+  width: 25px;
+  left: 13.8rem;
+  bottom:4rem;
+  display:none;
+
+}
+
+.invisible1{
+  position: absolute;
+  cursor: pointer;
+  width:10rem;
+  height: 15rem;
+  right: 3rem;
+  top: -4rem;
+
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  display:none;
+}
+
+.invisible2{
+  position: absolute;
+  cursor: pointer;
+  width:10rem;
+  height: 12rem;
+  left: 3rem;
+  bottom: .5rem;
+
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  display:none;
+}
+
+.rpsContainer .button1:hover ~ .pointer1{
+  display:block;
+}
+
+.rpsContainer .button2:hover ~ .pointer2{
+  display:block;
+}
+
+.rpsContainer .button3:hover ~ .pointer3{
+  display:block;
+}
+
+
+.invisible1:hover ~ .pointer4{
+  display:block;
+}
+
+.invisible2:hover ~ .pointer5{
+  display:block;
+}
+
+.invisible1:hover ~ .pointer6{
+  display:block;
+}
+
+.invisible2:hover ~ .pointer7{
+  display:block;
+}
+
