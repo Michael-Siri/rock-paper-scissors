@@ -165,10 +165,9 @@ btn3.addEventListener('click', () => {
 
 btn4.addEventListener('click', () => {
 
-    var b = document.getElementById("battleTheme");
     b.play();
     $(".rpsContainer, .versusContainer, .titleScreen").toggle();
-    
+
     updateEnemyHealth(bar,96);
     updateEnemyHealth(bar2,96);
 
@@ -177,7 +176,6 @@ btn4.addEventListener('click', () => {
     setTimeout(toggleBattleText, 6750);
 
     setTimeout(toggleButtons, 7000);
-
 
 });
 
@@ -257,7 +255,8 @@ function endGameLoss2(){
 const bar = document.querySelector(".progressBar");
 const bar2 = document.querySelector(".progressBar2");
 
-
+var b = document.getElementById("battleTheme");
+b.volume = 0.5;
 // Intro Animations
 
 // updateEnemyHealth(bar,96);
