@@ -108,6 +108,7 @@ btn.forEach((btn) =>{
 
 const btn2 = document.getElementById("opponent");
 const btn3 = document.getElementById("you");
+const btn4 = document.getElementById("titleScreen");
 
 btn2.addEventListener('click', () => {
 
@@ -162,14 +163,23 @@ btn3.addEventListener('click', () => {
     setTimeout(toggleBattleText, 2600);
 });
 
-// btn2.addEventListener('click', () => {
-//     alert("hi");
-// });
+btn4.addEventListener('click', () => {
 
-// btn3.addEventListener('click', () => {
+    var b = document.getElementById("battleTheme");
+    b.play();
+    $(".rpsContainer, .versusContainer, .titleScreen").toggle();
+    
+    updateEnemyHealth(bar,96);
+    updateEnemyHealth(bar2,96);
 
-// });
+    setTimeout(battleIntro, 3000);
 
+    setTimeout(toggleBattleText, 6750);
+
+    setTimeout(toggleButtons, 7000);
+
+
+});
 
 
 //Type message screen function
@@ -250,14 +260,14 @@ const bar2 = document.querySelector(".progressBar2");
 
 // Intro Animations
 
-updateEnemyHealth(bar,96);
-updateEnemyHealth(bar2,96);
+// updateEnemyHealth(bar,96);
+// updateEnemyHealth(bar2,96);
 
-setTimeout(battleIntro, 3000);
+// setTimeout(battleIntro, 3000);
 
-setTimeout(toggleBattleText, 6750);
+// setTimeout(toggleBattleText, 6750);
 
-setTimeout(toggleButtons, 7000);
+// setTimeout(toggleButtons, 7000);
 
 let brockCounter = 0;
 
