@@ -256,7 +256,7 @@ const bar = document.querySelector(".progressBar");
 const bar2 = document.querySelector(".progressBar2");
 
 var b = document.getElementById("battleTheme");
-b.volume = 0.5;
+b.volume = 0.2;
 // Intro Animations
 
 // updateEnemyHealth(bar,96);
