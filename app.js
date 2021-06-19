@@ -255,12 +255,6 @@ function endGameLoss2(){
 const bar = document.querySelector(".progressBar");
 const bar2 = document.querySelector(".progressBar2");
 
-var b = document.getElementById("battleTheme");
-b.volume = 0.2;
-var c = document.getElementById("clickSound");
-c.volume = 0.3;
-var v = document.getElementById("victoryTheme");
-v.volume = 0.3;
 
 // Intro Animations
 
