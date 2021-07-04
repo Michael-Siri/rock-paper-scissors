@@ -157,7 +157,7 @@ btn3.addEventListener('click', () => {
     setTimeout(toggleButtons, 0);
     toggleBattleText();
 
-    battleText("Denver, a bright and kind engineer graduate.");
+    battleText("Mys, an awesome friend and student.");
 
     setTimeout(toggleButtons, 2800);
     setTimeout(toggleBattleText, 2600);
@@ -242,7 +242,7 @@ function endGameWin2(){
 } 
 
 function endGameWin3(){
-    battleText("Get well soon Denver,  Don't give up. -Mike");
+    battleText("Happy Birthday Mys! -Mike");
 }
 
 function endGameLoss(){
