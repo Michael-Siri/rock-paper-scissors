@@ -20,9 +20,9 @@
     <a id = "titleScreen" class="titleScreen">
         CLICK HERE TO BEGIN
     </a>
-    <audio id = "battleTheme" src="./images/battleTheme.mp3"  loop="loop" volume = "1"></audio>
+    <audio id = "battleTheme" src="./images/battleThemefixed.mp3"  loop="loop" volume = "1"></audio>
     <audio id ="clickSound" src ="./images/clickSound2.mp3" loop ="false"></audio>
-    <audio id = "victoryTheme" src="./images/victoryTheme.mp3" volume = ".5"></audio>
+    <audio id = "victoryTheme" src="./images/victoryThemefixed.mp3" volume = ".5"></audio>
     
     <div class="versusContainer">
         <div class="progressBar">
@@ -104,11 +104,11 @@
         let playerScore = 1;
         let computerScore = 0;
         var b = document.getElementById("battleTheme");
-        b.volume = 1;
+        b.volume = 0.5;
         var c = document.getElementById("clickSound");
-        c.volume = 0.3;
+        c.volume = 0.5;
         var v = document.getElementById("victoryTheme");
-        v.volume = 0.3;
+        v.volume = 0.5;
 
             // let player = prompt();
             // let result = playRound(computerPlay(),player);
